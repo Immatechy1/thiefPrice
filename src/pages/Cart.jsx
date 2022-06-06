@@ -3,12 +3,14 @@ import styled from "styled-components"
 import Announcement from "../Components/Announcement";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
 `;
 
 const  Wrapper = styled.div`
     padding: 20px;
+    ${mobile({ padding: "10px" })};
 `;
 
 const Title = styled.h1`
@@ -33,6 +35,7 @@ const TopButton = styled.button`
 `;
 
 const TopTexts = styled.div`
+     ${mobile({ display: "none" })};
 `;
 
 const TopText = styled.span`
@@ -44,6 +47,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({ flexDirection: "column" })};
 `;
 
 const Info = styled.div`
@@ -53,7 +57,7 @@ const Info = styled.div`
 const Product = styled.div`
     display: flex;
     justify-content: space-between;
-
+    ${mobile({ flexDirection: "column" })};
 `;
 
 const ProductDetail = styled.div`
@@ -62,7 +66,7 @@ const ProductDetail = styled.div`
 `;
 
 const Image = styled.img`
-    width: 300px;
+    width: 180px;
 `;
 
 const Details = styled.div`
@@ -82,7 +86,6 @@ const ProductColor = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: ${(props) => props.color};
 `;
 
 
@@ -96,6 +99,7 @@ const PriceDetail = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
 `;
 
 
@@ -109,11 +113,14 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
     font-size: 24px;
     margin: 5px;
+    ${mobile({ margin: "5px 15px" })};
+ 
 `;
 
 const ProductPrice = styled.div`
     font-size: 30px;
     font-weight: 300;
+    ${mobile({ marginBottom: "20px" })};
 `;
 
 const Hr = styled.hr`
@@ -183,7 +190,7 @@ const Cart = () => {
                         <ProductDetail>
                             <Image src="https://media.istockphoto.com/photos/sneakers-sports-shoes-side-view-on-a-white-background-picture-id1170287384?k=20&m=1170287384&s=612x612&w=0&h=3P2siGKsvYjHFkBwxmtnz56hJaZFAAPLzZb-6N8J4yA="/>
                             <Details>
-                               <ProductName><b>Product:</b>JESSIE THUNDER SHOES</ProductName>
+                               <ProductName><b>Product:</b>THUNDER'S SHOES</ProductName>
                                <ProductId><b>ID:</b>93874325632</ProductId> 
                                <ProductColor color="black"/>
                                <ProductSize><b>Size:</b>37.5</ProductSize>
