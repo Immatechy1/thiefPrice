@@ -1,21 +1,21 @@
 export const sliderItems = [
     {
         id: 1,
-        img: "https://media.istockphoto.com/photos/attractive-woman-posing-in-a-pink-dress-picture-id164125799?k=20&m=164125799&s=612x612&w=0&h=pes7a0mC2u8auFvLbO_fO7jimzW5DotSNeP0UM-VOhQ=",
+        img: "https://i.pinimg.com/564x/8b/cb/36/8bcb364e372baefd97bbcfe43a8e8396.jpg",
         title: "SUMMER SALE",
         desc:  "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fsfafd"
     },
     {
         id: 2,
-        img: "https://media.istockphoto.com/photos/attractive-woman-posing-in-a-pink-dress-picture-id164125799?k=20&m=164125799&s=612x612&w=0&h=pes7a0mC2u8auFvLbO_fO7jimzW5DotSNeP0UM-VOhQ=",
+        img: "https://i.pinimg.com/564x/78/80/99/7880993186c38ac4a10ea7a78d015d08.jpg",
         title: "WINTER SALE",
         desc:  "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fcf1ed"
     },
     {
         id: 3,
-        img: "https://media.istockphoto.com/photos/attractive-woman-posing-in-a-pink-dress-picture-id164125799?k=20&m=164125799&s=612x612&w=0&h=pes7a0mC2u8auFvLbO_fO7jimzW5DotSNeP0UM-VOhQ=",
+        img: "https://i.pinimg.com/564x/6a/64/d9/6a64d9a1905016a64557c5197558954d.jpg",
         title: "POPULAR SALE",
         desc:  "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "fbfof4"
