@@ -8,6 +8,7 @@ import { mobile } from "../responsive";
 
 
 const Container = styled.div`
+background-color: #fffff;
 `;
 
 const Wrapper = styled.div`
@@ -22,7 +23,7 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 90vh;
+    height: 100%;
     object-fit:cover;
     ${mobile({ height: "40vh" })};
 `;
@@ -126,15 +127,18 @@ const Product = () => {
         <Announcement/>
         <Wrapper>
             <ImgContainer>
-                <Image src="https://media.istockphoto.com/photos/happy-young-woman-standing-with-hands-in-pockets-picture-id157662202?k=20&m=157662202&s=612x612&w=0&h=yNakF-PkmYYsTJ8qu-IUDAHE2CzME5DVEyolEhSjL4w=" />
+                <Image src="https://i.pinimg.com/564x/f4/27/06/f427067f78bd7b244732300c38bec0e9.jpg" />
             </ImgContainer>
             <InfoContainer>
-               <Title>Denim Jumpsuit</Title> 
-               <Desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo iaculis 
-               gravida. Sed leo neque, aliquam rhoncus tortor vitae, molestie cursus neque. 
-               Etiam a malesuada ligula. In turpis urna, lacinia nec augue et, placerat euismod 
-               odio. In eleifend augue turpis. Maecenas at nulla id nisi posuere rutrum ac sed metus. 
-               Mauris accumsan ligula vitae odio maximus, eu sagittis nisl fringilla. Mauris mattis.</Desc>
+               <Title>Denim Playsuit</Title> 
+               <Desc>New chapter fits are here and if you’re giving your wardrobe a well-deserved 
+                    refresh, a denim playsuit ticks all the boxes. This is a one-piece garment 
+                    with short legs and is stylish, chic, and easily styled. Denim playsuits are 
+                    fashion-forward but never lose that must-have practicality, with a sturdy fabric. 
+                    A denim playsuit is also super versatile; you can throw it on for day-to-day 
+                    casual wear, but you can easily dress it up or accessorise for a big night out.
+                   
+                </Desc>
                 <Price>$ 20</Price>
                 <FilterContainer>
                     <Filter>
