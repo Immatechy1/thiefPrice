@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 
 
 const App = () => {
-  const user = true
+  const user = false
   return (
     <Router>
       <Switch>
