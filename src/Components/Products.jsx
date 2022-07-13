@@ -1,3 +1,4 @@
+import { ShortText } from "@material-ui/icons";
 import styled from "styled-components"
 import { popularProducts } from "../data"
 import Product from "./Product";
@@ -9,7 +10,8 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const Products = () => {
+const Products = ({cat, filters, sort}) => {
+  console.log(cat, filters, ShortText)
   return (
     <Container>
         {popularProducts.map((item) => (
