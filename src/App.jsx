@@ -9,17 +9,17 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 
 
 const App = () => {
-  const user = false
+  const user = true
   return (
     <Router>
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/product/:category">
+        <Route exact path="/product/:category">
           <ProductList />
         </Route>
-        <Route path="/product/:id">
+        <Route exact path="/products/:id">
           <Product />
         </Route>
         <Route path="/cart">

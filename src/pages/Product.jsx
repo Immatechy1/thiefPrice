@@ -5,7 +5,9 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Newsletter from "../Components/Newsletter";
 import { mobile } from "../responsive";
-
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { publicRequest } from "../requestMethod";
 
 const Container = styled.div`
 background-color: #fffff;
@@ -121,48 +123,69 @@ const Button = styled.button`
 
 
 const Product = () => {
-  return (
+    const location = useLocation();
+    const id = location.pathname.split("/")[2];
+    const [product, setProduct] = useState({});
+    const [quantity, setQuantity] = useState(1);
+    const [color, setColor] = useState("");
+    const [size, setSize] = useState("");
+
+    useEffect(() => {
+        const getProduct = async () => {
+            try{
+               const res = await publicRequest.get("/product/find/"+id)
+               setProduct(res.data);
+            }catch{}
+        }
+        getProduct()
+    }, [id]) 
+
+const handleQuantity = (type) =>{
+    if(type === "dec"){
+        setQuantity(quantity - 1);
+    } else {
+        setQuantity(quantity + 1);
+    }
+}
+
+
+
+
+return (
     <Container>
         <Navbar/>
         <Announcement/>
         <Wrapper>
             <ImgContainer>
-                <Image src="https://i.pinimg.com/564x/f4/27/06/f427067f78bd7b244732300c38bec0e9.jpg" />
+                <Image src={product.img} />
             </ImgContainer>
             <InfoContainer>
-               <Title>Denim Playsuit</Title> 
-               <Desc>New chapter fits are here and if you’re giving your wardrobe a well-deserved 
-                    refresh, a denim playsuit ticks all the boxes. This is a one-piece garment 
-                    with short legs and is stylish, chic, and easily styled. Denim playsuits are 
-                    fashion-forward but never lose that must-have practicality, with a sturdy fabric. 
-                    A denim playsuit is also super versatile; you can throw it on for day-to-day 
-                    casual wear, but you can easily dress it up or accessorise for a big night out.
-                   
-                </Desc>
-                <Price>$ 20</Price>
+               <Title>{product.title}</Title> 
+               <Desc>
+                    {product.desc}
+               </Desc>
+                <Price>$ {product.price}</Price>
                 <FilterContainer>
                     <Filter>
                         <FilterTitle>Color</FilterTitle>
-                        <FilterColor color="black"/>
-                        <FilterColor color="darkblue"/>
-                        <FilterColor color="gray"/>
+                        {product.color?.map((c) => 
+                            <FilterColor color={c} key={c} onClick={()=>setColor(c)}/>
+                        )}
                     </Filter>
                     <Filter>
                         <FilterTitle>Size</FilterTitle>
-                        <FilterSize>
-                            <FilterSizeOption>XS</FilterSizeOption>
-                            <FilterSizeOption>S</FilterSizeOption>
-                            <FilterSizeOption>M</FilterSizeOption>
-                            <FilterSizeOption>L</FilterSizeOption>
-                            <FilterSizeOption>XL</FilterSizeOption>
+                        <FilterSize onChange={(e)=>setSize(e.target.value)}>
+                            {product.size?.map((s) =>(
+                                <FilterSizeOption key={s}>{s}</FilterSizeOption>
+                            ))}
                         </FilterSize>
                     </Filter>
                 </FilterContainer>
                 <AddContainer> 
                     <AmountContainer>
-                       <Remove/>
-                       <Amount>1</Amount>
-                       <Add/>
+                       <Remove onClick = {()=>handleQuantity("dec")}/>
+                       <Amount>{quantity}</Amount>
+                       <Add onClick = {()=>handleQuantity("inc")}/>
                     </AmountContainer>
 
                     <Button>ADD TO CART</Button>

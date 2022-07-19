@@ -45,34 +45,34 @@ export const categories = [
 export const popularProducts = [
     {
         id: 1,
-        img: "https://media.istockphoto.com/photos/blank-henley-tshirt-mockup-front-view-design-presentation-for-print-picture-id1309834855?k=20&m=1309834855&s=612x612&w=0&h=vSeK0sVbQEzJEG9BmJjyhs-A6rQtWeY5-M-BEDiBwec=",
+        img: "https://i.pinimg.com/564x/77/b4/e3/77b4e3b9c741d134a11958d9f92fe4bd.jpg",
     },
     {
         id: 2,
-        img: "https://media.istockphoto.com/photos/black-tshirt-on-a-white-background-picture-id187300373?k=20&m=187300373&s=612x612&w=0&h=wycH4FwYSSOeUADIGP8oo16IXQR0lS15nI5hHOOY9Bw=",
+        img: "https://i.pinimg.com/564x/4f/b6/e0/4fb6e04d8afaf614d7e1957ae55aa7bc.jpg",
     },
     {
         id: 3,
-        img: "https://media.istockphoto.com/photos/mens-brown-wrinkled-shorts-with-belt-isolated-on-white-background-picture-id505562951?k=20&m=505562951&s=612x612&w=0&h=KdULAxxnRShvUojQPCFHu4aRIEtYN291Jo1i8OdOR5w=",
+        img: "https://i.pinimg.com/564x/f5/47/4a/f5474a6f62535924bf917b92ca91e25e.jpg",
     },
     {
         id: 4,
-        img: "https://media.istockphoto.com/photos/flowery-evase-sweetheart-dress-picture-id178852003?k=20&m=178852003&s=612x612&w=0&h=YcNA59LTF-Euk5Eo8fNpDVlUYpBDxgp9Nzf3ozDWrLQ=",
+        img: "https://i.pinimg.com/474x/f0/68/ad/f068adf5a17c7d55d0910e92700b7ae4.jpg",
     },
     {
         id: 5,
-        img: "https://media.istockphoto.com/photos/handbag-in-studio-picture-id615523886?k=20&m=615523886&s=612x612&w=0&h=oX47NZE75LBcSTxXuM5IO2eqzc0ul-5SMykA1GgQVug=",
+        img: "https://i.pinimg.com/474x/ea/23/8d/ea238d9baf5ae90017a4b23e7637c466.jpg",
     },
     {
         id: 6,
-        img: "https://media.istockphoto.com/photos/blank-baseball-cap-color-darkgrey-picture-id664895468?k=20&m=664895468&s=612x612&w=0&h=M07beVEE5_7veG2aOeUUSyok2UrUouABinnXCfzYJKw=",
+        img: "https://i.pinimg.com/474x/1f/4c/83/1f4c83cf352ba08b0ee428be7d32a78f.jpg",
     },
     {
         id: 7,
-        img: "https://media.istockphoto.com/photos/elegant-designer-fur-lined-ladies-winter-jacket-picture-id907852976?k=20&m=907852976&s=612x612&w=0&h=zz_ComFCh7Ro33mSITzoYqx1tBjgWsVRcMMYpMuwQYU=",
+        img: "https://i.pinimg.com/474x/3b/b5/35/3bb535a57264118c81ee779a78729c73.jpg",
     },
     {
         id: 8,
-        img: "https://media.istockphoto.com/photos/woman-winter-clothes-picture-id97929910?k=20&m=97929910&s=612x612&w=0&h=HwJeK6_XlbVCLrEht43-xxIodQ7RSQqRQy9jerA5108=",
+        img: "https://i.pinimg.com/564x/19/1b/e6/191be638619dd52dd15294b4fc96d25c.jpg",
     }
 ];
