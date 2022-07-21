@@ -85,7 +85,7 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>LAMA.</Logo>
+            <Logo>ThiefPrice.</Logo>
             <Desc>There are many variations of passages of Lorem Ipsum available, 
             but the majority have suffered alteration in some form, by injected humour,
             or randomised words which don't look even slightly believable.</Desc>
@@ -130,7 +130,7 @@ const Footer = () => {
                 <Phone style={{marginRight:"10px"}} /> +234 803 333 3333
             </ContactItem>
             <ContactItem>
-                <MailOutline style={{marginRight:"10px"}}/> contact@lama.dev
+                <MailOutline style={{marginRight:"10px"}}/> contact@thiefprice.dev
             </ContactItem>
             <Payment src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yLtiQpAHo8udlaerxF075vaLEWsiQp2HpQ&usqp=CAU" />
         </Right>
