@@ -17,6 +17,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-stripe-checkout": "^2.6.3",
+    "redux-persist": "^6.0.0",
     "stripe": "^9.14.0",
     "styled-components": "^5.3.5",
     "toolkit": "^1.5.4",
