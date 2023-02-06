@@ -27,18 +27,19 @@ export const categories = [
         id: 1,
         img: "https://images.unsplash.com/photo-1434510423563-c7e99bbc5bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
         title: "SHIRT STYLE",
-        cat: "women",
+        cat: "men",
     },
     {
         id: 2,
         img: "https://images.unsplash.com/photo-1565537222174-2a43ca1c3462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
         title: "LOUNGEWEAR LOVE",
-        cat: "jeans",
+        cat: "women",
     },
     {
         id: 3,
         img: "https://images.unsplash.com/photo-1553591589-2e96ef7eca65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
         title: "DENIM JACKET",
+        cat: "jeans",
     }
 ];
 
@@ -57,7 +58,7 @@ export const popularProducts = [
     },
     {
         id: 4,
-        img: "https://i.pinimg.com/474x/f0/68/ad/f068adf5a17c7d55d0910e92700b7ae4.jpg",
+        img: "https://i.pinimg.com/564x/b9/cc/84/b9cc84083a0cce0cb360bde8a5d873a3.jpg",
     },
     {
         id: 5,
@@ -69,10 +70,14 @@ export const popularProducts = [
     },
     {
         id: 7,
-        img: "https://i.pinimg.com/474x/3b/b5/35/3bb535a57264118c81ee779a78729c73.jpg",
+        img: "https://i.pinimg.com/564x/20/32/ca/2032ca77c7486de9bf5a9545b5b9f017.jpg",
     },
     {
         id: 8,
         img: "https://i.pinimg.com/564x/19/1b/e6/191be638619dd52dd15294b4fc96d25c.jpg",
+    },
+    {
+        id: 9,
+        img: "https://i.pinimg.com/564x/38/73/77/387377d5f9d27bc85c806bf3a0f39cf7.jpg",
     }
 ];
