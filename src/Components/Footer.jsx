@@ -15,7 +15,7 @@ const Left = styled.div`
     padding: 20px;
 `;
 
-const Logo = styled.h1`
+const Logo = styled.h3`
     
 `;
 
@@ -25,8 +25,6 @@ const Desc = styled.p`
 
 const SocialContainer = styled.div`
     display: flex;
-    
-
 `;
 
 const SocialIcon = styled.div`
@@ -44,6 +42,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    margin-right: 200px;
     ${mobile({ display: "none" })};
 `;
 
@@ -77,7 +76,7 @@ const ContactItem = styled.div`
 `;
 
 const Payment = styled.img`
-    width: 65%;
+    width: 70%;
 `;
 
 
