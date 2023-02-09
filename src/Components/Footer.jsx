@@ -3,16 +3,18 @@ import styled from "styled-components"
 import { mobile } from "../responsive";
 
 
+
 const Container = styled.div`
     display: flex;
     ${mobile({ flexDirection: "column" })};
 `;
 
 const Left = styled.div`
-    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
+    ${mobile({padding: "20px"  })};
+   
 `;
 
 const Logo = styled.h3`
@@ -21,6 +23,8 @@ const Logo = styled.h3`
 
 const Desc = styled.p`
     margin: 20px 0px;
+    width: 400px;
+    ${mobile({fontSize: "14px",  width: "300px" })};
 `;
 
 const SocialContainer = styled.div`
@@ -40,14 +44,14 @@ const SocialIcon = styled.div`
 `;
 
 const Center = styled.div`
-    flex: 1;
-    padding: 20px;
-    margin-right: 200px;
+    padding: 30px;
+    margin-left: 250px;
     ${mobile({ display: "none" })};
+    
 `;
 
 const Title = styled.h3`
-    margin-bottom: 30px
+    margin-bottom: 20px 
 `;
 
 const List = styled.ul`
@@ -56,6 +60,7 @@ const List = styled.ul`
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    width: 300px;
 `;
 
 const ListItem = styled.li`
@@ -64,9 +69,9 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
-    flex: 1;
-    padding: 20px;
-    ${mobile({ backgroundColor: "#fff8f8" })};
+    padding: 30px;
+    margin-left: 200px;
+    ${mobile({ backgroundColor: "#fff8f8", marginLeft: "0px" })};
 `;
 
 const ContactItem = styled.div`
@@ -76,7 +81,8 @@ const ContactItem = styled.div`
 `;
 
 const Payment = styled.img`
-    width: 70%;
+    width: 80%;
+    ${mobile({  width: "50%" })};
 `;
 
 
@@ -113,7 +119,7 @@ const Footer = () => {
                 <ListItem>Women Fashion</ListItem>
                 <ListItem>Accesories</ListItem>
                 <ListItem>My Account</ListItem>
-                <ListItem>Orde Tracking</ListItem>
+                <ListItem>Order Tracking</ListItem>
                 <ListItem>Wishlist</ListItem>
                 <ListItem>Wishlist</ListItem>
                 <ListItem>Terms</ListItem>
