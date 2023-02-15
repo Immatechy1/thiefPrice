@@ -5,12 +5,13 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { mobile } from "../responsive";
+import { tablet } from "../responsive";
 
 
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })};
-
+  ${tablet({backgroundColor: "red" })};
 `;
 
 const Wrapper = styled.div`
