@@ -8,35 +8,9 @@ export const mobile = (props) => {
     `;
 };
 
-export const tablet = (props) => {
-    return css`
-        @media only screen and (min-width: 1200px) {
-            ${props}
-        }
-    `;
-};
-
-// 
-
-// export const laptops = (props) => {
+// export const tablet = (props) => {
 //     return css`
-//         @media only screen and (min-width: 600px) {
-//             ${props}
-//         }
-//     `;
-// };
-
-// export const desktop = (props) => {
-//     return css`
-//         @media only screen and (min-width: 600px) {
-//             ${props}
-//         }
-//     `;
-// };
-
-// export const TV = (props) => {
-//     return css`
-//         @media only screen and (min-width: 600px) {
+//         @media only screen and (min-width: 1200px) {
 //             ${props}
 //         }
 //     `;
