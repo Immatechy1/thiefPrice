@@ -3,6 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import { tablet } from "../responsive";
 
 const Container = styled.div`
   width: 100%;
@@ -11,6 +12,7 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   ${mobile({ display: "none" })};
+  ${tablet({  height: "70vh" })};
 `;
 
 const Arrow = styled.div`
@@ -55,11 +57,13 @@ const ImgContainer = styled.div`
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
-  ${mobile({ display: "none" })};
+  // ${mobile({ display: "none" })};
+  // ${tablet({  flex: "0px", marginBottom: "300px", marginRight: "300px"})};
 `;
 
 const Title = styled.h1`
   font-size: 70px;
+  // ${tablet({ flex: "0px" })};
 `;
 
 const Desc = styled.p`
