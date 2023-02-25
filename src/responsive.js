@@ -8,9 +8,25 @@ export const mobile = (props) => {
     `;
 };
 
+export const tablet = (props) => {
+    return css`
+        @media (min-width: 601px) and (max-width: 990px) {
+            ${props}
+        }
+    `;
+};
+
+// export const  largetablet = (props) => {
+//     return css`
+//         @media only screen and (max-width: 768px) {
+//             ${props}
+//         }
+//     `;
+// };
+
 // export const tablet = (props) => {
 //     return css`
-//         @media only screen and (min-width: 1200px) {
+//         @media only screen and (max-width: 768px) {
 //             ${props}
 //         }
 //     `;
