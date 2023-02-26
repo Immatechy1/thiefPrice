@@ -55,15 +55,12 @@ const ImgContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  flex: 1;
+  flex: 2;
   padding: 50px;
-  // ${mobile({ display: "none" })};
-  // ${tablet({  flex: "0px", marginBottom: "300px", marginRight: "300px"})};
 `;
 
 const Title = styled.h1`
   font-size: 70px;
-  // ${tablet({ flex: "0px" })};
 `;
 
 const Desc = styled.p`
@@ -71,6 +68,7 @@ const Desc = styled.p`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
+ 
 `;
 
 const Buttton = styled.button`
