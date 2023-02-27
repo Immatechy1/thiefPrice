@@ -1,6 +1,7 @@
 import { Send } from '@material-ui/icons';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
+import { tablet } from "../responsive";
 
 const Container = styled.div`
     height: 60vh;
@@ -10,6 +11,7 @@ const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     ${mobile({  height: "40vh;" })};
+    ${tablet({  height: "50vh;" })};
 `;
 
 const Title = styled.h1`

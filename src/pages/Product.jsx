@@ -118,7 +118,7 @@ const Button = styled.button`
     cursor: pointer;
     font-weight: 500;
 
-    &:hover {
+    &:link {
         background-color: #f8f4f4;
     }
 `;

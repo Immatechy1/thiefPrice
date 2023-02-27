@@ -57,6 +57,7 @@ const ImgContainer = styled.div`
 const InfoContainer = styled.div`
   flex: 2;
   padding: 50px;
+  ${tablet({ display: "none" })};
 `;
 
 const Title = styled.h1`

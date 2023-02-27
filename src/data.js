@@ -26,19 +26,19 @@ export const categories = [
     {
         id: 1,
         img: "https://images.unsplash.com/photo-1434510423563-c7e99bbc5bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-        title: "SHIRT STYLE",
+        title: "MEN STYLE",
         cat: "men",
     },
     {
         id: 2,
         img: "https://images.unsplash.com/photo-1565537222174-2a43ca1c3462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-        title: "LOUNGEWEAR LOVE",
+        title: "WOMEN LOVE",
         cat: "women",
     },
     {
         id: 3,
         img: "https://images.unsplash.com/photo-1553591589-2e96ef7eca65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
-        title: "DENIM JACKET",
+        title: "DENIM STYLE",
         cat: "jeans",
     }
 ];
