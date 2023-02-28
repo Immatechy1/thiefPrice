@@ -2,22 +2,20 @@ import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } fro
 import styled from "styled-components"
 import { mobile } from "../responsive";
 import { tablet } from "../responsive";
-
-
+import { largetablet } from "../responsive";
 
 const Container = styled.div`
     display: flex;
-    ${mobile({ flexDirection: "column" })};
-    ${tablet({ display: "none" })};
-    
+    ${mobile({flexDirection: "column"})}; 
+    ${tablet({ padding: "20px"})}; 
+    ${largetablet({padding: "10px"})}; 
 `;
 
 const Left = styled.div`
     display: flex;
     flex-direction: column;
     padding: 30px;
-    ${mobile({padding: "20px"  })};
-   
+    ${mobile({padding: "20px"})}; 
 `;
 
 const Logo = styled.h3`
@@ -27,7 +25,9 @@ const Logo = styled.h3`
 const Desc = styled.p`
     margin: 20px 0px;
     width: 400px;
-    ${mobile({fontSize: "14px",  width: "300px" })};
+    ${mobile({fontSize: "14px",  width: "300px"})};
+    ${tablet({width: "300px"})};
+    ${largetablet({width: "250px"})};  
 `;
 
 const SocialContainer = styled.div`
@@ -49,7 +49,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     padding: 30px;
     margin-left: 150px;
-    ${mobile({ display: "none" })};
+    ${mobile({ display: "none"})};
+    ${tablet({ display: "none"})};
+    ${largetablet({marginLeft: "70px"})};  
     
 `;
 
@@ -74,7 +76,8 @@ const ListItem = styled.li`
 const Right = styled.div`
     padding: 30px;
     margin-left: 150px;
-    ${mobile({ backgroundColor: "#fff8f8", marginLeft: "0px" })};
+    ${mobile({ backgroundColor: "#fff8f8", marginLeft: "0px"})};
+    ${largetablet({marginLeft: "10px"})};  
 `;
 
 const ContactItem = styled.div`
@@ -85,7 +88,7 @@ const ContactItem = styled.div`
 
 const Payment = styled.img`
     width: 80%;
-    ${mobile({  width: "50%" })};
+    ${mobile({width: "50%"})};
 `;
 
 
