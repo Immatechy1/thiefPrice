@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 import { mobile } from "../responsive";
 import { tablet } from "../responsive";
 
@@ -76,10 +77,14 @@ const MenuItem = styled.p`
   margin-left: 25px;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })};
   ${tablet({ fontSize: "23px", marginLeft: "17px" })};
-  &:link, {
-    text-decoration: none;
-  }
+  
 `;
+
+const linkStyle = {
+  margin: "1rem",
+  textDecoration: "none",
+  color: 'blue'
+};
 
 const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
@@ -95,15 +100,15 @@ const Navbar = () => {
         </Left>
         <Center>
           <Logo>
-            <Link to="/">ThiefPrice</Link>
+            <Link to="/" style={linkStyle}>ThiefPrice</Link>
           </Logo>
         </Center>
 
         <Right>
-          <Link to="/register">
+          <Link to="/register" style={linkStyle}>
             <MenuItem>REGISTER</MenuItem>
           </Link>
-          <Link to="/login">
+          <Link to="/login" style={linkStyle}>
             <MenuItem>SIGN IN</MenuItem>
           </Link>
           <Link to="/cart">
